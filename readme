@@ -1,1 +1,2 @@
 
+docker run --privileged=true -it --rm -e RPM_GIT_HTTP=https://code.osssc.ac.cn/jiayi/ -e RPM_GIT_REPO=kernel.git -e SCM_BRANCH=main -e RPM_BUILD_TIMEOUT=180000 hub.oepkgs.net/oepkgs/rpmbuild-advanced:openEuler-24.03-LTS-riscv64-update-202411021000 | tee kernel.log
